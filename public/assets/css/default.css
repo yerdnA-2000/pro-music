@@ -1,0 +1,173 @@
+/************************ 1. Default css ***********************/
+body {
+  color: #000000;
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  cursor: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000000;
+  font-style: normal;
+  font-family: "Overpass", sans-serif;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 91px;
+  color: #ffffff;
+  font-family: "Overpass", sans-serif;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 61px;
+  color: #000000;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #EA1C29;
+}
+
+h6 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #444444;
+}
+
+span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #EA1C29;
+}
+
+a {
+  color: #ffffff;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  text-decoration: none !important;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+}
+
+img {
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -ms-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  display: inline-block !important;
+}
+
+ul {
+  margin-bottom: 0px;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  position: relative;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+a:hover, a:visited, a:active, a:focus {
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+#wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.form-control:focus {
+  border: none;
+  outline: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+.row > * {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  margin: 0 -15px;
+}
+
+.p-10 {
+  padding: 100px 0;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.p-8 {
+  padding-bottom: 80px;
+}
+
+.p-30 {
+  padding-bottom: 30px;
+}
+
+/*# sourceMappingURL=default.css.map */

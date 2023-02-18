@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bestfit22_btn {
+  background-color: #c40043;
+  border-radius: 50px;
+  padding: 20px 30px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border: 1px solid #c40043;
+}
+
+.bestfit22_btn:hover {
+  color: #c40043;
+}
+
+.bestfit22_btn::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #ffffff;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.bestfit22_btn:hover::before {
+  background-color: #ffffff;
+  height: 100%;
+  bottom: auto;
+  top: 0;
+}
+
+.page-content-container {
+  padding: 40px 40px 40px 37px;
+}
+@media (max-width: 1439px) {
+  .page-content-container {
+    padding: 40px 35px;
+  }
+}
+@media (max-width: 767px) {
+  .page-content-container {
+    padding: 40px 16px;
+  }
+}
+
+/*# sourceMappingURL=general.css.map */

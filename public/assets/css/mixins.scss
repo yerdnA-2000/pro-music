@@ -1,0 +1,72 @@
+// Colors
+$white: #ffffff;
+$white-dark: #DFDFDF;
+$beige-primary: #FDE8CD;
+$green-primary: #00bda1;
+$brown-primary: #332720;
+$brown-dark: #18120e;
+$brown-light: #513423;
+
+$grey-dark: #212B36;
+$grey-light: #637381;
+$grey-primary: #919EAB14;
+
+// Sizes
+$mobile: 375px;
+$tablet: 768px;
+$desktop: 1440px;
+
+// z-indexes
+$z-index-alerts-container: 3000;
+
+$z-index-header: 4000;
+$z-index-header-menu: 4001;
+
+$z-index-navigation-menu-container: 9997;
+$z-index-navigation-menu-overlay: 9998;
+$z-index-navigation-menu-sidebar: 9999;
+
+
+@mixin default-transition {
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+
+@mixin description {
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #637381;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+
+  }
+}
+
+$max-mobile-width: 767px;
+$max-tablet-width: 1439px;
+
+@mixin tablet {
+  @media(max-width: #{$max-tablet-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media(max-width: #{$max-mobile-width}) {
+    @content;
+  }
+}
+
+$box-shadow: 0px -8px 24px rgba(145, 158, 171, 0.08), 0px 16px 32px -4px rgba(145, 158, 171, 0.19);
