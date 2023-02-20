@@ -2,15 +2,17 @@
 
 use core\Route;
 
-require_once 'core/interfaces/ModelInterface.php';
-require_once 'core/interfaces/ViewInterface.php';
-require_once 'core/interfaces/RouteInterface.php';
-require_once 'core/interfaces/ConfigInterface.php';
-require_once 'core/Config.php';
-require_once 'core/Model.php';
-require_once 'core/View.php';
-require_once 'core/Controller.php';
-require_once 'core/Route.php';
-require_once 'src/controllers/HomeController.php';
+require_once __DIR__ . '/vendor/autoload.php';
+
+$namespaces = function (string $path) {
+    if (preg_match('/\\\\/', $path)) {
+        $path = str_replace('\\', DIRECTORY_SEPARATOR, $path);
+    }
+    if (\stream_resolve_include_path("{$path}.php") !== false) {
+        require_once("{$path}.php");
+    }
+};
+
+\spl_autoload_register($namespaces);
 
 (new Route())->run();

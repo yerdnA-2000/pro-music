@@ -2,7 +2,9 @@
 
 namespace core;
 
+use core\helpers\ClassHelper;
 use core\interfaces\RouteInterface;
+use JetBrains\PhpStorm\NoReturn;
 
 class Route implements RouteInterface
 {
@@ -27,17 +29,18 @@ class Route implements RouteInterface
 
         foreach ($this->routes as $uriPattern => $path) {
             if (preg_match("~$uriPattern~", $uri)) {
-                $segments = explode('/', $path);
+                $segments = explode('/', $path);;
                 $controllerName = array_shift($segments) . 'Controller';
                 $controllerName = ucfirst($controllerName);
                 $actionName = array_shift($segments);
-                $controllerFile = ROOT . '/controllers/' . $controllerName . '.php';
+                $controllerFile = ROOT . '/src/controllers/' . $controllerName . '.php';
 
                 if (file_exists($controllerFile)) {
+                    $namespace = ClassHelper::getNamespaceFromFile($controllerFile);
+                    $controllerName = $namespace[0] . '\\' . $controllerName;
                     include_once($controllerFile);
                 }
-
-                $controllerObject = new $controllerName;
+                $controllerObject = new $controllerName();
                 $controllerObject->$actionName();
 
                 $result = true;
@@ -49,9 +52,10 @@ class Route implements RouteInterface
         }
     }
 
-    protected static function notFoundHttp()
+    #[NoReturn]
+    protected static function notFoundHttp() : void
     {
-        $host = 'http://' . $_SERVER['HTTP_HOST'] . '/';
+        $host = '//' . $_SERVER['HTTP_HOST'] . '/';
         header('HTTP/1.1 404 Not Found');
         header("Status: 404 Not Found");
         header('Location:' . $host . '404');
