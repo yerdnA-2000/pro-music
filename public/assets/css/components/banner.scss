@@ -1,0 +1,31 @@
+.image-banner {
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/banner/banner-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  > :before {
+    position: absolute;
+    content: "";
+    width: 1000px;
+    height: 500px;
+    border-radius: 50%;
+    bottom: 150px;
+    left: -110px;
+    background: #004f44;
+    filter: blur(110px);
+    opacity: 0.8;
+    animation: top-bottom-animation 4s linear infinite alternate;
+  }
+
+  &__content {
+    padding: 100px 0 100px 0;
+    position: relative;
+  }
+
+  &__title {
+    color: #ffffff;
+  }
+}

@@ -63,5 +63,64 @@
   &--about {
     background: #FDE8CD;
   }
+
+  &--review {
+    background: #18120e;
+    position: relative;
+    overflow: hidden;
+
+    > :before {
+      position: absolute;
+      content: "";
+      width: 400px;
+      height: 400px;
+      opacity: 0.8;
+      border-radius: 50%;
+      top: -60px;
+      left: -180px;
+      background: mixins.$green-primary;
+      -webkit-filter: blur(120px);
+      filter: blur(120px);
+      -webkit-animation: top-bottom-animation 4s linear infinite alternate;
+      animation: top-bottom-animation 4s linear infinite alternate;
+    }
+    > :after {
+      position: absolute;
+      content: "";
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      bottom: 0;
+      opacity: 0.8;
+      right: -190px;
+      background: $green-primary;
+      -webkit-filter: blur(100px);
+      filter: blur(100px);
+      -webkit-animation: bottom-top-animation 4s linear infinite alternate;
+      animation: bottom-top-animation 4s linear infinite alternate;
+    }
+  }
+
+  &--price {
+    background: mixins.$brown-dark;
+    position: relative;
+    padding: 100px 0;
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 700px;
+      opacity: 0.2;
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      background: mixins.$green-primary;
+      -webkit-filter: blur(120px);
+      filter: blur(120px);
+    }
+  }
 }
 

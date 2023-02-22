@@ -27,16 +27,13 @@
                             <a class="header-navbar__nav-link" href="#classes">Классы</a>
                         </li>
                         <li class="header-navbar__nav-item">
-                            <a class="header-navbar__nav-link" href="#testimonial">Отзывы</a>
+                            <a class="header-navbar__nav-link" href="#review">Отзывы</a>
                         </li>
                         <li class="header-navbar__nav-item">
                             <a class="header-navbar__nav-link" href="#price">Цены</a>
                         </li>
                         <li class="header-navbar__nav-item">
-                            <a class="header-navbar__nav-link" href="#trainer">Тренеры</a>
-                        </li>
-                        <li class="header-navbar__nav-item">
-                            <a class="header-navbar__nav-link" href="#news">Новости</a>
+                            <a class="header-navbar__nav-link" href="#statistics">Наша статистика</a>
                         </li>
                         <li class="header-navbar__nav-item">
                             <a class="header-navbar__nav-link" href="#contact">Контакты</a>

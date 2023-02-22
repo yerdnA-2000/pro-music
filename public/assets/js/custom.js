@@ -69,8 +69,8 @@ $(document).ready(function(){
     }
 
 
-/* Testimonial slider */
-    var swiper = new Swiper(".testimonial_slider", {
+/* review slider */
+    var swiper = new Swiper(".review__slider", {
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
