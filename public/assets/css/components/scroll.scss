@@ -11,6 +11,10 @@
   bottom: 40px;
   right: auto;
   padding: 10px;
+
+  @include tablet {
+    display: none;
+  }
 }
 .scroll-arrow {
   display: block;

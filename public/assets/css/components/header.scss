@@ -17,14 +17,153 @@
   &__navbar-collapse-js {
     -webkit-overflow-scrolling: touch;
   }
+
+  &__navbar-collapse {
+    @include tablet {
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 99;
+      width: 300px;
+      height: 100vh;
+      -webkit-overflow-scrolling: touch;
+      font-size: 14px;
+      line-height: 34px;
+      transform: translateX(-110%);
+      transition: all 0.3s ease-in-out;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-top: 98px;
+      padding-bottom: 98px;
+      background: $brown-dark;
+
+      &.static {
+        transform: translateX(0);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 0 30px 98px;
+        transition: all 0.3s ease-in-out;
+        margin-top: 78px;
+      }
+    }
+  }
 }
 
 .header-navbar {
 
+  @include tablet {
+    height: 100%;
+
+    &:first-child {
+      margin-top: 1.5rem;
+    }
+  }
+
+  &__panel {
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__toggle-menu {
+    display: none;
+
+    @include tablet {
+      display: inline-block!important;
+      position: relative;
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+      cursor: pointer;
+      color: #EA1C29;
+      background-color: transparent;
+      border: none;
+      padding: 1px 6px;
+      z-index: 999;
+    }
+
+    span {
+      position: relative;
+      display: block;
+      margin: auto;
+      transition: .3s all ease;
+      width: 24px;
+      height: 2px;
+      background-color: $beige-primary;
+      backface-visibility: hidden;
+      border-radius: 0;
+
+      &:before, &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -8px;
+        transition: .3s all ease;
+        width: 24px;
+        height: 2px;
+        background-color: $beige-primary;
+        backface-visibility: hidden;
+        border-radius: 0;
+      }
+
+      &:after {
+        top: 8px;
+      }
+    }
+
+    &.static {
+
+      span {
+        background: transparent;
+
+        &:before {
+          transform: rotate(45deg);
+        }
+
+        &:after {
+          transform: rotate(-45deg);
+        }
+
+        &:after, &:before {
+          transform-origin: 50% 50%;
+          top: 0;
+        }
+      }
+    }
+  }
+
   &__nav-item {
     display: inline-block;
 
+    @include tablet {
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+
     &--application {
+
+      @include tablet {
+        margin-top: 42px;
+      }
 
       &:before {
         content: "";
@@ -32,6 +171,20 @@
         position: relative;
         border-left: 3px solid $green-primary;
         margin: auto 1rem auto 1rem;
+
+        @include tablet {
+          position: absolute;
+          content: " ";
+          left: 0;
+          bottom: auto;
+          height: 1px;
+          width: 100%;
+          top: -20px;
+          color: #00bda1;
+          background: #00bda1;
+          border-radius: 50px;
+          margin: 0;
+        }
       }
     }
   }
@@ -46,6 +199,10 @@
     margin: 0 12px;
     position: relative;
     text-transform: uppercase;
+
+    @include tablet {
+      margin: 25px 0;
+    }
 
     &.active:before {
       position: absolute;
@@ -113,10 +270,17 @@
     padding: 25px 60px 25px 60px;
     margin-left: auto;
     margin-right: auto;
+
+    @include tablet {
+      padding: 15px;
+    }
   }
 
   &__brand {
+    margin-left: 1.5rem;
   }
 
-  &__brand-logo {}
+  &__brand-logo {
+
+  }
 }

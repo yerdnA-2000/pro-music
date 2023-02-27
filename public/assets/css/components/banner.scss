@@ -21,12 +21,22 @@
   }
 
   &__content {
-    padding: 100px 0 100px 0;
+    padding: 100px 0;
     position: relative;
+
+    @include tablet {
+      padding: 26px;
+    }
   }
 
   &__title {
     color: #ffffff;
+    padding-bottom: 80px;
+    margin: 0;
+
+    @include tablet {
+      padding-bottom: 40px;
+    }
   }
 }
 
@@ -35,18 +45,37 @@
   &__content {
     position: relative;
     padding: 180px 0 100px 0;
+
+    @include tablet {
+      padding: 40px 0 0 0;
+    }
   }
 
   &__header {
     color: $beige-primary;
+
+    @include tablet {
+      display: block;
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__title {
     padding: 10px 0 20px 0;
+
+    @include tablet {
+      font-size: 42px;
+      line-height: 60px;
+    }
   }
 
   &__desc {
     margin-bottom: 72px;
     color: #ffffff;
+
+    @include tablet {
+      line-height: 45px;
+      margin-bottom: 55px;
+    }
   }
 }

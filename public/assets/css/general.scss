@@ -73,11 +73,20 @@
 }
 
 .section {
+  padding: 100px 0;
+
+  @include mixins.tablet {
+    padding: 50px 0;
+  }
 
   &__header {
     color: #00bda1;
     padding-bottom: 10px;
     display: inline-block;
+
+    @include mixins.tablet {
+      padding-bottom: 25px;
+    }
   }
 
   &--main-banner {
@@ -136,7 +145,6 @@
   &--price {
     background: mixins.$brown-dark;
     position: relative;
-    padding: 100px 0;
 
     &:before {
       position: absolute;
@@ -175,6 +183,10 @@
             inset 0 0 200px #0c002d,
             inset 0 0 200px #0c002d,
             inset 0 0 200px #0c002d;
+
+    @include mixins.tablet {
+      padding-bottom: 50px;
+    }
   }
 }
 

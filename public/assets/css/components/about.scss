@@ -3,6 +3,10 @@
   &__img-wrapper {
     display: flex;
     align-items: center;
+
+    @include tablet {
+      display: none;
+    }
   }
 
   &__img {
@@ -45,6 +49,10 @@
 
 .services {
   padding-top: 100px;
+
+  @include tablet {
+    padding-top: 50px;
+  }
 
   &__item {
     position: relative;
@@ -176,6 +184,11 @@
     position: relative;
     border-radius: 50px;
     border: 2px solid #ffffff;
+
+    @include tablet {
+      width: 75px;
+      height: 75px;
+    }
 
     img {
       filter: brightness(0) invert(1);

@@ -1,4 +1,4 @@
-<section class="section section--statistics p-10 reveal" id="statistics">
+<section class="section section--statistics reveal" id="statistics">
     <div class="parallax-overlay"></div>
     <div class="container">
         <div class="row">

@@ -27,6 +27,10 @@
 
   &__exposition {
 
+    @include tablet {
+      margin-bottom: 42px;
+    }
+
     .progress-counter {
 
       &__title {
@@ -46,6 +50,11 @@
         margin-bottom: 10px;
         position: absolute;
         color: #ffffff;
+
+        @include tablet {
+          position: relative;
+          font-size: 16px;
+        }
       }
 
       &__count {
@@ -78,6 +87,12 @@
       background: linear-gradient(143.7deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.08) 100%);
       border-radius: 20px;
       box-shadow: inset 1px 1px 0 0px rgb(255 255 255 / 32%);
+
+      @include tablet {
+        padding: 25px;
+        backdrop-filter: unset;
+        position: relative;
+      }
 
       &__title {
         h2 {

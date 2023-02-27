@@ -1,4 +1,4 @@
-<section class="section section--review p-10" id="review">
+<section class="section section--review" id="review">
     <div class="container">
         <div class="review__header text-center mb-60">
             <span class="section__header">Отзывы</span>

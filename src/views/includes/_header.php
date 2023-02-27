@@ -3,6 +3,10 @@
         <nav class="header-navbar__expand">
             <div class="header-navbar__wrap">
                 <div class="header-navbar__panel">
+                    <!--Navbar Toggle-->
+                    <button class="header-navbar__toggle-menu header-navbar__toggle-menu-js toggle-menu-js">
+                        <span></span>
+                    </button>
                     <div class="header-navbar__brand">
                         <a class="header-navbar__brand-logo brand-logo" href="/">
                             <img class="img-fluid" src="/public/assets/images/logo/logo.png" alt="Logo">

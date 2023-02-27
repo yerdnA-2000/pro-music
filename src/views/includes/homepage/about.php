@@ -1,4 +1,4 @@
-<section class="section section--about p-10" id="about">
+<section class="section section--about" id="about">
     <div class="container">
         <div class="row">
             <div class="about__img-wrapper col-12 col-lg-6 col-md-6" data-aos="fade-right" data-aos-duration="1000">
@@ -76,7 +76,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-6">
+            <div class="col-12 col-md-6 col-lg-6 p-30">
                 <div class="services__item">
                     <div class="service__content">
                         <div class="service__wrapper">
@@ -96,7 +96,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-6">
+            <div class="col-12 col-md-6 col-lg-6 p-30">
                 <div class="services__item">
                     <div class="service__content">
                         <div class="service__wrapper">

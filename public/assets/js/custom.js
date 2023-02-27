@@ -5,23 +5,12 @@ $(document).ready(function(){
     ====================================== */
 
     $(document).on("click", function(event){
-    	if($(event.target).closest(".sidebar-toggle").length){
-    		$(".fixed-menu").toggleClass("active");
-    		$('.sidebar-menu').toggleClass("active");
-    	} else if(!$(event.target).closest(".sidebar-toggle").length){
-    		$(".fixed-menu").removeClass("active");
-    		$(".sidebar-menu").removeClass("active");
-    	}
-    });
-
-
-    $(document).on("click", function(event){
-        if($(event.target).closest(".toggle-menu").length){
+        if($(event.target).closest(".toggle-menu-js").length){
             $(".header__navbar-collapse-js").toggleClass("static");
-            $('.navbar-toggle').toggleClass("static");
-        } else if(!$(event.target).closest(".toggle-menu").length){
+            $('.header-navbar__toggle-menu-js').toggleClass("static");
+        } else if(!$(event.target).closest(".toggle-menu-js").length){
             $(".header__navbar-collapse-js").removeClass("static");
-            $(".navbar-toggle").removeClass("static");
+            $(".header-navbar__toggle-menu-js").removeClass("static");
         }
     });
 

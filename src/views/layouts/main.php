@@ -18,12 +18,8 @@
           rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/public/assets/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="/public/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/public/assets/css/all.css">
-    <!--    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">-->
     <link rel="stylesheet" type="text/css" href="/public/assets/css/swiper.min.css"/>
     <link rel="stylesheet" type="text/css" href="/public/assets/css/aos.css">
-    <link rel="stylesheet" type="text/css" href="/public/assets/css/custom.css">
-    <!--    <link rel="stylesheet" type="text/css" href="assets/css/media-query.css">-->
     <link rel="stylesheet" type="text/css" href="/public/assets/css/style.css">
     <title>PRO Music</title>
 </head>
