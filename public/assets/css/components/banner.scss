@@ -29,3 +29,24 @@
     color: #ffffff;
   }
 }
+
+.main-banner {
+
+  &__content {
+    position: relative;
+    padding: 180px 0 100px 0;
+  }
+
+  &__header {
+    color: $beige-primary;
+  }
+
+  &__title {
+    padding: 10px 0 20px 0;
+  }
+
+  &__desc {
+    margin-bottom: 72px;
+    color: #ffffff;
+  }
+}

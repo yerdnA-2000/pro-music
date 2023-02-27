@@ -91,7 +91,7 @@ a:hover{
 a:hover, a:visited, a:active, a:focus {
   text-decoration: none;
   outline: none;
-  transition: all 0.5s linear;
+  transition: all 0.1s linear;
   transform: translate3d(0, 0, 0);
 }
 #wrap {

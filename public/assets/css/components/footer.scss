@@ -1,17 +1,36 @@
 .footer {
-  background-image: url(../images/footer/footer-background.jpg);
+  background-image: url(../images/footer/footer-background.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
   padding: 240px 0 100px 0;
-  margin-top: -140px;
 
   &__container {
     position: relative;
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
+  }
+
+  &__brand-logo {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &:after {
+      content: "";
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-left: 1px solid $grey-light;
+    }
+
+    img {
+      max-height: 150px;
+      margin: -2.5rem auto 1.5rem auto;
+    }
   }
 
   &__place-detail {

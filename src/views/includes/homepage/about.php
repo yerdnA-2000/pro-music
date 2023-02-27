@@ -10,26 +10,25 @@
                     <span class="section__header" style="color: #00bda1">О нас</span>
                     <h2 class="about__sub-header m-0" style="color: #513423">Учим вокалу
                         и игре на музыкальных инструментах </h2>
-                    <p class="about__details m-0">Мы внимательно относимся к каждому клиенту. Тренеры найдут
-                        к каждому индивидуальный подход, составят персональный план, подберут питание
-                        и программу тренировок.</p>
+                    <p class="about__details m-0">Мы внимательно относимся к каждому ученику. Преподаватели найдут
+                        к каждому индивидуальный подход, составят персональный учебный план, подберут инструмент
+                        и найдут время на дополнительные занятия.</p>
                     <div class="about__box-details">
                         <div class="about__box-item">
                             <i class="about-box-item__icon ri-check-line"></i>
-                            <p class="about-box-item__text m-0 check_detail">Программа тренировок.</p>
+                            <p class="about-box-item__text m-0 check_detail">80% занятий проходят индивидуально.</p>
                         </div>
                         <div class="about__box-item">
                             <i class="about-box-item__icon ri-check-line"></i>
-                            <p class="about-box-item__text m-0 check_detail">План питания для диеты или набора
-                                массы.</p>
+                            <p class="about-box-item__text m-0 check_detail">Увлекательные и разнообразные уроки.</p>
                         </div>
                         <div class="about__box-item">
                             <i class="about-box-item__icon ri-check-line"></i>
-                            <p class="about-box-item__text m-0 check_detail">Множество разнообразных тренажеров.</p>
+                            <p class="about-box-item__text m-0 check_detail">Возможность занятий онлайн.</p>
                         </div>
                         <div class="about__box-item">
                             <i class="about-box-item__icon ri-check-line"></i>
-                            <p class="about-box-item__text m-0 check_detail">Душ, бассейн и банный комплекс.</p>
+                            <p class="about-box-item__text m-0 check_detail">Много практики и живые выступления.</p>
                         </div>
                     </div>
                 </div>
@@ -48,9 +47,8 @@
                                 </div>
                                 <div class="service__title">Участие в концертах</div>
                             </div>
-                            <p class="service__desc mt-1 text-start">Amet lectus ut ullamcorper dui
-                                convallis dictumst orci consequat. At senectus ornare amet suscipit.
-                                Morbi libero, nisi, diam lorem diam in feugiat risus.</p>
+                            <p class="service__desc mt-1 text-start">Ваша цель выйти на сцену? В процессе обучения будет множество
+                                предложений выступить перед публикой как в составе оркестра или хора, так и сольно.</p>
                         </div>
                     </div>
                     <img class="service__bg-img img-cover img-fluid"
@@ -69,10 +67,8 @@
                                 </div>
                                 <div class="service__title">Онлайн занятия</div>
                             </div>
-                            <p class="service__desc mt-1 text-start">Tempor pellentesque luctus mi porttitor at orci,
-                                tristique. Cursus quam quam vulputate enim. Enim proin congue sed id aenean in quis.
-                                Cras turpis varius mauris nunc urna, vitae nisl ullamcorper. Ultricies convallis
-                                elementum sed ullamcorper integer sed aliquam volutpat, blandit. Porta.</p>
+                            <p class="service__desc mt-1 text-start">Если вы не имеете возможности обучаться в классе, то
+                            наша школа предоставляет возможность удаленных занятий. Главное, предупредите соседей ;)</p>
                         </div>
                     </div>
                     <img class="service__bg-img img-cover img-fluid"
@@ -91,10 +87,8 @@
                                 </div>
                                 <div class="service__title">Профи преподаватели</div>
                             </div>
-                            <p class="service__desc mt-1 text-start">Dui, consectetur nibh sed libero massa enim
-                                consequat pellentesque. Gravida arcu mi amet neque. Aliquam pharetra euismod lectus
-                                mattis lobortis eu aliquam. Semper sit pretium sit vulputate commodo, volutpat bibendum
-                                quis. Et quisque eget tellus hendrerit id morbi magna tortor enim non.</p>
+                            <p class="service__desc mt-1 text-start">Наши преподаватели научат вас с нуля до виртуоза!
+                                Доверьтесь настоящим профессионалам. Каждый преподаватель имеет большой стаж как в выступлениях, так и в наставничестве.</p>
                         </div>
                     </div>
                     <img class="service__bg-img img-cover img-fluid"
@@ -113,10 +107,8 @@
                                 </div>
                                 <div class="service__title">Гибкое расписание</div>
                             </div>
-                            <p class="service__desc mt-1 text-start">Vitae quisque aenean molestie risus imperdiet
-                                vulputate etiam id. Fames et lectus sagittis, aliquet sed. Odio aliquam, eget iaculis
-                                vel pulvinar lacus sem mollis. Pharetra quam velit lectus accumsan et euismod morbi
-                                vitae elementum. Eget massa tempor urna, placerat at blandit.</p>
+                            <p class="service__desc mt-1 text-start">Если вы думаете, сможете ли вы успевать на занятия,
+                                забудьте об этом! Мы подстроимся под ваше время, и составим удобный график.</p>
                         </div>
                     </div>
                     <img class="service__bg-img img-cover img-fluid"

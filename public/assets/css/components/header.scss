@@ -9,9 +9,13 @@
       top: 0;
       right: 0;
       z-index: 16;
-      background-color: $brown-primary;
-      box-shadow: 0 0 22px -4px rgb(0 0 0 / 17%);
+      background-color: $brown-dark;
+      border-bottom: $green-primary solid 1px;
     }
+  }
+
+  &__navbar-collapse-js {
+    -webkit-overflow-scrolling: touch;
   }
 }
 
@@ -19,6 +23,17 @@
 
   &__nav-item {
     display: inline-block;
+
+    &--application {
+
+      &:before {
+        content: "";
+        height: 100%;
+        position: relative;
+        border-left: 3px solid $green-primary;
+        margin: auto 1rem auto 1rem;
+      }
+    }
   }
 
   &__nav-link {
@@ -32,12 +47,48 @@
     position: relative;
     text-transform: uppercase;
 
+    &.active:before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: auto;
+      height: 2px;
+      width: 20px;
+      bottom: -8px;
+      color: $green-primary;
+      background: $green-primary;
+      -webkit-transition: 0.4s ease-in-out;
+      -o-transition: 0.4s ease-in-out;
+      transition: 0.4s ease-in-out;
+      border-radius: 50px;
+    }
+
+    &:hover::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: auto;
+      height: 2px;
+      width: 20px;
+      bottom: -8px;
+      color: $green-primary;
+      background: $green-primary;
+      -webkit-transition: 0.4s ease-in-out;
+      -o-transition: 0.4s ease-in-out;
+      transition: 0.4s ease-in-out;
+      border-radius: 50px;
+    }
+
+    &--application {
+      color: $white;
+    }
+
     &:hover {
       color: $green-primary;
     }
 
-    &:active {
-      color: #c40043;
+    &.active {
+      color: $green-primary;
 
       &:before {
         position: absolute;
@@ -45,10 +96,10 @@
         left: 0;
         top: auto;
         height: 2px;
-        width: 100%;
+        width: 20px;
         bottom: -8px;
-        color: #c40043;
-        background: #c40043;
+        color: $green-primary;
+        background: $green-primary;
         border-radius: 50px;
       }
     }
@@ -67,7 +118,5 @@
   &__brand {
   }
 
-  &__brand-logo {
-    display: block;
-  }
+  &__brand-logo {}
 }

@@ -1,13 +1,13 @@
 <!--  first section -->
-<section class="first_section social-triangle" id="home">
+<section class="section section--main-banner" id="home">
     <div class="parallax-overlay"></div>
     <div class="container">
-        <div class="banner_content col-12 col-lg-9 col-md-10">
-            <span class="gym-head">Музыкальная школа в Барнауле</span>
-            <h1 class="main_tiltle m-0">Познайте музыку в любом возрасте</h1>
-            <p>Преподаватели высокого класса. Большой выбор музыкальных инструментов от
+        <div class="main-banner__content col-12 col-lg-9 col-md-10">
+            <span class="main-banner__header">Музыкальная школа в Барнауле</span>
+            <h1 class="main-banner__title m-0">Познайте музыку в любом возрасте</h1>
+            <p class="main-banner__desc">Преподаватели высокого класса. Большой выбор музыкальных инструментов от
                 фортепиано, гитары и барабанов до глюкофона и др. экзотических инструментов</p>
-            <a class="button bestfit22_btn" href="#appointment">Оставить онлайн-заявку</a>
+            <a class="btn" href="#application">Оставить онлайн-заявку</a>
         </div>
         <a href="#about" class="scroll-down">
             <span class="scroll-arrow arrow1"></span>

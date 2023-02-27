@@ -4,8 +4,9 @@
             <div class="header-navbar__wrap">
                 <div class="header-navbar__panel">
                     <div class="header-navbar__brand">
-                        <a class="header-navbar__brand-logo" href="/">
-                            <img class="img-fluid" src="/public/assets/images/logo/logo.png" alt="Header Logo img">
+                        <a class="header-navbar__brand-logo brand-logo" href="/">
+                            <img class="img-fluid" src="/public/assets/images/logo/logo.png" alt="Logo">
+                            <span>PRO MUSIC</span>
                         </a>
                     </div>
                 </div>
@@ -18,25 +19,20 @@
                             <a class="header-navbar__nav-link" href="#about">О нас</a>
                         </li>
                         <li class="header-navbar__nav-item">
-                            <a class="header-navbar__nav-link" href="#mission">Миссия</a>
-                        </li>
-                        <li class="header-navbar__nav-item">
-                            <a class="header-navbar__nav-link" href="#service">Сервисы</a>
-                        </li>
-                        <li class="header-navbar__nav-item">
-                            <a class="header-navbar__nav-link" href="#classes">Классы</a>
-                        </li>
-                        <li class="header-navbar__nav-item">
                             <a class="header-navbar__nav-link" href="#review">Отзывы</a>
                         </li>
                         <li class="header-navbar__nav-item">
-                            <a class="header-navbar__nav-link" href="#price">Цены</a>
+                            <a class="header-navbar__nav-link" href="#price">Услуги</a>
                         </li>
                         <li class="header-navbar__nav-item">
                             <a class="header-navbar__nav-link" href="#statistics">Наша статистика</a>
                         </li>
                         <li class="header-navbar__nav-item">
                             <a class="header-navbar__nav-link" href="#contact">Контакты</a>
+                        </li>
+                        <li class="header-navbar__nav-item header-navbar__nav-item--application">
+                            <a class="header-navbar__nav-link header-navbar__nav-link--application"
+                               href="#application">Оставить заявку</a>
                         </li>
                     </ul>
                 </div>

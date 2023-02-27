@@ -29,12 +29,12 @@ $(document).ready(function(){
 
 
 
- /* ===================================
-    header menu Active class
-    ====================================== */
+/* ===================================
+   header menu Active class
+   ====================================== */
 
-    $(document).ready(function () {
-        $(document).on("scroll", onScroll);
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
 
     //smoothscroll
     $('a[href^="#"]').on('click', function (e) {
@@ -42,7 +42,7 @@ $(document).ready(function(){
         $(document).off("scroll");
 
         var target = this.hash,
-        menu = target;
+            menu = target;
         $target = $(target);
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top+1
@@ -51,22 +51,25 @@ $(document).ready(function(){
             $(document).on("scroll", onScroll);
         });
     });
+
+
 });
 
-    function onScroll(event){
-        var currentScrollPos = $(document).scrollTop();
-        $('.header__navbar-collapse-js ul li a').each(function () {
-            var currLink = $(this);
-            var refElement = $(currLink.attr("href"));
-            if (refElement.position().top <= currentScrollPos+1 && refElement.position().top + refElement.height() > currentScrollPos+1) {
-                $('.header__navbar-collapse-js ul li a').removeClass("active");
-                currLink.addClass("active");
-            }
-            else{
-                currLink.removeClass("active");
-            }
-        });
-    }
+function onScroll(event){
+    var currentScrollPos = $(document).scrollTop();
+    $('.header__navbar-collapse-js ul li a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= currentScrollPos+1 && refElement.position().top + refElement.height() > currentScrollPos+1) {
+            $('.header__navbar-collapse-js ul li a').removeClass("active");
+            currLink.addClass("active");
+            console.log(currLink.find('.active'));
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+}
 
 
 /* review slider */
@@ -134,3 +137,4 @@ $(window).on("load", function() {
             })
     })
 }(jQuery)
+

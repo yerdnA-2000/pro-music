@@ -8,8 +8,8 @@
             <div class="swiper-wrapper">
                 <div class="review__item swiper-slide">
                     <div class="review__detail">
-                        <p class="m-0">Я влюбилась в этот зал с первого взгляда! Лучшие тренеры, лучшие программы.
-                            А какие там бассейн и банный комплекс! Всем рекомендую.</p>
+                        <p class="m-0">Я влюбилась в эту школу с первого взгляда! Вежливые и квалифицированные преподаватели,
+                            удобнейший график и онлайн-занятия. А какие там новые и современные инструменты! Всем рекомендую.</p>
                     </div>
                     <div class="review__client-profile">
                         <img src="/public/assets/images/review/profile-img1.png" alt="profilr-img1"
@@ -29,8 +29,8 @@
                 </div>
                 <div class="review__item swiper-slide">
                     <div class="review__detail">
-                        <p class="m-0">Я влюбился в этот зал с первого взгляда! Лучшие тренеры, лучшие программы.
-                            А какие там бассейн и банный комплекс! Всем рекомендую.</p>
+                        <p class="m-0">Я влюбилась в эту школу с первого взгляда! Вежливые и квалифицированные преподаватели,
+                            удобнейший график и онлайн-занятия. А какие там новые и современные инструменты! Всем рекомендую.</p>
                     </div>
                     <div class="review__client-profile">
                         <img src="/public/assets/images/review/profile-img2.png" alt="profilr-img12"
@@ -50,8 +50,8 @@
                 </div>
                 <div class="review__item swiper-slide">
                     <div class="review__detail">
-                        <p class="m-0">Я влюбилась в этот зал с первого взгляда! Лучшие тренеры, лучшие программы.
-                            А какие там бассейн и банный комплекс! Всем рекомендую.</p>
+                        <p class="m-0">Я влюбилась в эту школу с первого взгляда! Вежливые и квалифицированные преподаватели,
+                            удобнейший график и онлайн-занятия. А какие там новые и современные инструменты! Всем рекомендую.</p>
                     </div>
                     <div class="review__client-profile">
                         <img src="/public/assets/images/review/profile-img1.png" alt="profilr-img1"
@@ -71,8 +71,8 @@
                 </div>
                 <div class="review__item swiper-slide">
                     <div class="review__detail">
-                        <p class="m-0">Я влюбился в этот зал с первого взгляда! Лучшие тренеры, лучшие программы.
-                            А какие там бассейн и банный комплекс! Всем рекомендую.</p>
+                        <p class="m-0">Я влюбилась в эту школу с первого взгляда! Вежливые и квалифицированные преподаватели,
+                            удобнейший график и онлайн-занятия. А какие там новые и современные инструменты! Всем рекомендую.</p>
                     </div>
                     <div class="review__client-profile">
                         <img src="/public/assets/images/review/profile-img2.png" alt="profilr-img12"
