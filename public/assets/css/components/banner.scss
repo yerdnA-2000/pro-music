@@ -44,7 +44,7 @@
 
   &__content {
     position: relative;
-    padding: 180px 0 100px 0;
+    padding: 60px 0 100px 0;
 
     @include tablet {
       padding: 40px 0 0 0;
@@ -53,11 +53,8 @@
 
   &__header {
     color: $beige-primary;
-
-    @include tablet {
-      display: block;
-      margin-bottom: 1.5rem;
-    }
+    margin-bottom: 1rem;
+    display: block;
   }
 
   &__title {

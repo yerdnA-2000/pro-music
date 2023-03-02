@@ -229,6 +229,30 @@
   background: #FDE8CD;
 }
 
+.modal__header {
+  color: #18120e;
+}
+.modal__title {
+  color: #18120e;
+}
+.modal .modal-header__button {
+  color: #18120e;
+  background: none;
+  border: none;
+}
+.modal .modal-header__button span {
+  color: #18120e;
+}
+.modal .modal-status--success {
+  background: #beffd6 !important;
+}
+.modal .modal-status--error {
+  background: #ffbec5 !important;
+}
+.modal .modal-status--warning {
+  background: #ffebbe !important;
+}
+
 body {
   color: #000000;
   background-color: #ffffff;
@@ -288,7 +312,7 @@ h5 {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  color: #c40043;
+  color: #00bda1;
 }
 
 h6 {
@@ -1685,7 +1709,7 @@ input:focus-visible {
 
 .main-banner__content {
   position: relative;
-  padding: 180px 0 100px 0;
+  padding: 60px 0 100px 0;
 }
 @media (max-width: 1439px) {
   .main-banner__content {
@@ -1694,12 +1718,8 @@ input:focus-visible {
 }
 .main-banner__header {
   color: #FDE8CD;
-}
-@media (max-width: 1439px) {
-  .main-banner__header {
-    display: block;
-    margin-bottom: 1.5rem;
-  }
+  margin-bottom: 1rem;
+  display: block;
 }
 .main-banner__title {
   padding: 10px 0 20px 0;

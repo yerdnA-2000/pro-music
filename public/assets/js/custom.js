@@ -1,3 +1,40 @@
+$(document).ready(function () {
+
+/* ===================================
+    application form submit
+    ====================================== */
+    $('.ajax-form-default-js').submit(function (event) {
+        var json;
+        event.preventDefault();
+        var form = $(this);
+        $.ajax({
+            type: $(this).attr('method'),
+            url: $(this).attr('action'),
+            data: new FormData(this),
+            contentType: false,
+            cache: false,
+            processData: false,
+            success: function (response) {
+                if (response.url) {
+                    window.location.href = response.url;
+                } else {
+                    $('#application-modal-js').modal('show');
+                    $('.modal-status-js').addClass('modal-status--' + response.status);
+                    $('.modal__title-js').text(response.message);
+                    $('.modal__body-js').text(response.desc);
+                    form.find("input, textarea").val("");
+                }
+            },
+            error: function () {
+                $('#application-modal-js').modal('show');
+                $('.modal-status-js').addClass('modal-status--error');
+                $('.modal__title-js').text('Неизвестная ошибка');
+                $('.modal__body-js').text('Произошла неизвестная ошибка. Повторите попытку или обратитесь в службу поддержки.');
+            }
+        });
+    });
+});
+
 $(document).ready(function(){
 
 /* ===================================
@@ -52,7 +89,6 @@ function onScroll(event){
         if (refElement.position().top <= currentScrollPos+1 && refElement.position().top + refElement.height() > currentScrollPos+1) {
             $('.header__navbar-collapse-js ul li a').removeClass("active");
             currLink.addClass("active");
-            console.log(currLink.find('.active'));
         }
         else{
             currLink.removeClass("active");

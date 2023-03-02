@@ -1,3 +1,8 @@
+<?php
+
+use core\Route;
+
+?>
 <section class="section section--statistics reveal" id="statistics">
     <div class="parallax-overlay"></div>
     <div class="container">
@@ -35,12 +40,13 @@
                     <div class="application-form__title">
                         <h2>Оставить заявку</h2>
                     </div>
-                    <form class="application-form__form">
+                    <form class="application-form__form ajax-form-default-js"
+                          action="<?= Route::getSiteAddress() ?>/application/create" method="post">
                         <div class="application-form__input-container row">
                             <div class="application-form__input-group">
                                 <div class="application-form__input-wrap">
                                     <label>
-                                        <input type="text" name="Full Name"
+                                        <input type="text" name="name"
                                                class="application-form__input application-form__input--text" placeholder="Ваше имя"
                                                required="">
                                     </label>
@@ -49,7 +55,7 @@
                             <div class="application-form__input-group">
                                 <div class="application-form__input-wrap">
                                     <label>
-                                        <input type="text" name="Phone Number"
+                                        <input type="text" name="phone"
                                                class="application-form__input application-form__input--text" placeholder="Телефон"
                                                required="">
                                     </label>
@@ -58,7 +64,7 @@
                             <div class="application-form__input-group">
                                 <div class="application-form__input-wrap">
                                     <label>
-                                        <input type="email" name="Email Address"
+                                        <input type="email" name="email"
                                                class="application-form__input application-form__input--text" placeholder="Email"
                                                required="">
                                     </label>
@@ -69,7 +75,7 @@
                                     <label>
                                         <textarea name="message"
                                                   class="application-form__input application-form__input--textarea"
-                                                  placeholder="Сообщение..."></textarea>
+                                                  placeholder="Сообщение..." required></textarea>
                                     </label>
                                 </div>
                             </div>

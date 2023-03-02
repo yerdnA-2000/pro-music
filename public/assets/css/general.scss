@@ -243,3 +243,44 @@
   }
 }
 
+.modal {
+
+  &__header {
+    color: mixins.$brown-dark;
+  }
+
+  &__title {
+    color: mixins.$brown-dark;
+  }
+
+  .modal-header {
+
+    &__button {
+      color: mixins.$brown-dark;
+      background: none;
+      border: none;
+
+      span {
+        color: mixins.$brown-dark;
+      }
+    }
+  }
+
+  .modal-status {
+
+    &--success {
+      background: #beffd6!important;
+    }
+
+    &--error {
+      background: #ffbec5!important;
+    }
+
+    &--warning {
+      background: #ffebbe!important;
+    }
+  }
+
+
+}
+

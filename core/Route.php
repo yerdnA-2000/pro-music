@@ -28,8 +28,8 @@ class Route implements RouteInterface
         $result = false;
 
         foreach ($this->routes as $uriPattern => $path) {
-            if (preg_match("~$uriPattern~", $uri)) {
-                $segments = explode('/', $path);;
+            if ($uriPattern == $uri && preg_match("~$uriPattern~", $uri)) {
+                $segments = explode('/', $path);
                 $controllerName = array_shift($segments) . 'Controller';
                 $controllerName = ucfirst($controllerName);
                 $actionName = array_shift($segments);
@@ -60,5 +60,10 @@ class Route implements RouteInterface
         header("Status: 404 Not Found");
         header('Location:' . $host . '404');
         exit();
+    }
+
+    public static function getSiteAddress(): string
+    {
+        return $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['SERVER_NAME'];
     }
 }

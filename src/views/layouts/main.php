@@ -40,6 +40,8 @@
 
     <?php include_once('src/views/includes/_footer.php') ?>
 
+    <?php include_once ('src/views/includes/_modal.php') ?>
+
     <!-- scroll bottom-top  -->
     <div class="scroll-top">
         <svg class="border-circle svg-inner" width="100%" height="100%" viewBox="-1 -1 102 102">
