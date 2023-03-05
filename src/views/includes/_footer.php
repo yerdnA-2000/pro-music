@@ -3,10 +3,22 @@
     <div class="footer__container">
         <div class="main-footer">
             <div class="row">
-                <a class="footer__brand-logo brand-logo col-12 col-md-12 col-lg-3" href="/">
-                    <img src="/public/assets/images/logo/logo.png" class="img-fluid" alt="Logo">
-                    <span>PRO MUSIC</span>
-                </a>
+                <div class="col-12 col-md-12 col-lg-3">
+                    <a class="footer__brand-logo brand-logo col-12 col-md-12 col-lg-3" href="/">
+                        <img src="/public/assets/images/logo/logo.png" class="img-fluid" alt="Logo">
+                        <span>PRO MUSIC</span>
+                    </a>
+                    <div class="footer__social-list">
+                        <a href="https://telegram.org/" class="social-list__link social-list__link--telegram">
+                            <i class="ri-telegram-fill social-list__icon social-list__icon--telegram"></i></a>
+                        <a href="https://www.whatsapp.com/" class="social-list__link social-list__link--whatsapp">
+                            <i class="ri-whatsapp-fill social-list__icon social-list__icon--vk"></i></a>
+                        <a href="https://www.instagram.com/" class="social-list__link social-list__link--instagram instagram-ic">
+                            <i class="ri-instagram-line social-list__icon social-list__icon--instagram"></i></a>
+                        <a href="https://www.youtube.com/" class="social-list__link social-list__link--youtube youtube-ic">
+                            <i class="ri-youtube-fill social-list__icon social-list__icon--youtube"></i></a>
+                    </div>
+                </div>
                 <div class="col-12 col-md-4 col-lg-3">
                     <div class="footer__item">
                         <div class="footer__place-detail">
