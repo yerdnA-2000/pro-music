@@ -5,7 +5,7 @@ use core\Route;
 ?>
 <section class="section section--statistics reveal" id="statistics">
     <div class="parallax-overlay"></div>
-    <div class="container">
+    <div class="container" >
         <div class="row">
             <div class="statistics__exposition col-12 col-lg-6 col-md-6">
                 <div class="statistics__content">

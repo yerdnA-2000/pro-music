@@ -32,7 +32,7 @@
                             <a class="header-navbar__nav-link" href="#statistics">Наша статистика</a>
                         </li>
                         <li class="header-navbar__nav-item">
-                            <a class="header-navbar__nav-link" href="#contact">Контакты</a>
+                            <a class="header-navbar__nav-link" href="#contacts">Контакты</a>
                         </li>
                         <li class="header-navbar__nav-item header-navbar__nav-item--application">
                             <a class="header-navbar__nav-link header-navbar__nav-link--application"

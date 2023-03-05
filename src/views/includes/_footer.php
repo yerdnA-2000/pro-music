@@ -1,6 +1,6 @@
-<footer class="footer" id="contact">
+<footer class="footer">
     <div class="parallax-overlay parallax-overlay--80-deg"></div>
-    <div class="footer__container">
+    <div class="footer__container" id="contacts">
         <div class="main-footer">
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-3">
@@ -47,7 +47,7 @@
         </div>
         <div class="footer__sub-footer">
             <div class="footer__copyright">
-                <p class="copyright__text">&copy; 2022 PRO MUSIC. Все права защищены.</p>
+                <p class="copyright__text">&copy; 2022 PRO MUSIC. Фалькова Анастасия.</p>
             </div>
             <div class="footer__copyright-privacy">
                 <a class="copyright-privacy__link" href="#">Политика конфиденциальности</a>
