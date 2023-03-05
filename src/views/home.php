@@ -1,3 +1,13 @@
+<?php
+
+use core\View;
+
+/**
+ * @var View $this
+ * @var $reviews
+ */
+?>
+
 <!--  first section -->
 <section class="section section--main-banner" id="home">
     <div class="parallax-overlay"></div>
@@ -24,7 +34,10 @@
 <!-- / About section -->
 
 <!--  Review section -->
-<?php include_once ('includes/homepage/review.php')?>
+<?php $this->render('includes/homepage/review.php',
+        ['reviews' => $reviews],
+        false)
+?>
 <!-- / Review section -->
 
 <!--  Banner section -->

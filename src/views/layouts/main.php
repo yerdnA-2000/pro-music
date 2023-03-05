@@ -2,12 +2,14 @@
 
 /**
  * @var string $content
+ * @var  $reviews
  */
 
 ?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <?php include_once ('_analytics/yandex-metrics.php') ?>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,6 +24,7 @@
     <link rel="stylesheet" type="text/css" href="/public/assets/css/aos.css">
     <link rel="stylesheet" type="text/css" href="/public/assets/css/style.css">
     <title>PRO Music</title>
+    <?php include_once ('_analytics/google-analytics.php') ?>
 </head>
 <body>
 <!-- Preloader -->

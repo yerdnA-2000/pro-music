@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://pro-music.ru.xsph.ru/sitemap.xml

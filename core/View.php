@@ -7,16 +7,19 @@ use JetBrains\PhpStorm\NoReturn;
 
 class View implements ViewInterface
 {
-    private string $layout;
+    private ?string $layout;
 
     public function render($content, $data = null, $layout = null)
     {
         if (is_array($data)) {
             extract($data);
         }
-        $this->setLayout($layout);
-
-        include 'src/views/' . $this->layout;
+        if ($layout !== false) {
+            $this->setLayout($layout);
+            include 'src/views/' . $this->layout;
+        } else {
+            include 'src/views/' . $content;
+        }
     }
 
     /**

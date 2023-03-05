@@ -1594,6 +1594,9 @@ input:focus-visible {
   .service__img-wrapper {
     width: 75px;
     height: 75px;
+    background-color: transparent;
+    border: none;
+    line-height: normal;
   }
 }
 .service__img-wrapper img {

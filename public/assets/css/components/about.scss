@@ -188,6 +188,9 @@
     @include tablet {
       width: 75px;
       height: 75px;
+      background-color: transparent;
+      border: none;
+      line-height: normal;
     }
 
     img {
