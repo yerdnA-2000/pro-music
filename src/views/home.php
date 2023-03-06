@@ -19,11 +19,11 @@ use core\View;
                 фортепиано, гитары и барабанов до глюкофона и др. экзотических инструментов</p>
             <a class="btn" href="#application">Оставить онлайн-заявку</a>
         </div>
-        <!--<a href="#about" class="scroll-down">
+        <a href="#about" class="scroll-down">
             <span class="scroll-arrow arrow1"></span>
             <span class="scroll-arrow arrow2"></span>
             <span class="scroll-arrow arrow3"></span>
-        </a>-->
+        </a>
     </div>
 
 </section>
